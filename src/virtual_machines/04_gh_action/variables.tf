@@ -12,7 +12,7 @@ variable "resource_group_name" {
 variable "virtual_machine_sku" {
   description = "Azure VM SKU size"
   type        = string
-  default     = "Standard_B2ats_v2"
+  default     = "Standard_B2s"
 }
 
 variable "admin_cidr_block" {
