@@ -1,7 +1,7 @@
 variable "location" {
   description = "The location of the resource group containing the federated identity resources"
   type        = string
-  default     = "canadacentral"
+  default     = "westus2"
 }
 
 variable "resource_group_name" {
@@ -12,7 +12,7 @@ variable "resource_group_name" {
 variable "virtual_machine_sku" {
   description = "Azure VM SKU size"
   type        = string
-  default     = "Standard_B2s"
+  default     = "Standard_D2s_v5"
 }
 
 variable "admin_cidr_block" {
