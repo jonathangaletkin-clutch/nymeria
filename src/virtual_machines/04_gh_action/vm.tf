@@ -29,7 +29,7 @@ resource "azurerm_network_interface" "cross_cloud" {
   ip_configuration {
     name                          = "nymeria-nic-${random_string.unique_id.result}"
     subnet_id                     = azurerm_subnet.cross_cloud.id
-    private_ip_address_allocation = "Static"
+    private_ip_address_allocation = "Dynamic"
     public_ip_address_id          = azurerm_public_ip.cross_cloud.id
   }
 }
