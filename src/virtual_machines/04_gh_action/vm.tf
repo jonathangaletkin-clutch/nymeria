@@ -17,6 +17,7 @@ resource "azurerm_public_ip" "cross_cloud" {
   location            = var.location
   resource_group_name = var.resource_group_name
   allocation_method   = "Static"
+  sku  =  "Standard"
   domain_name_label   = "cross-cloud-${random_string.unique_id.result}"
 }
 
