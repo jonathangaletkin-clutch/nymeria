@@ -1,7 +1,7 @@
 variable "location" {
   description = "The location of the resource group containing the federated identity resources"
   type        = string
-  default     = "EastUS3"
+  default     = "canadacentral"
 }
 
 variable "resource_group_name" {
